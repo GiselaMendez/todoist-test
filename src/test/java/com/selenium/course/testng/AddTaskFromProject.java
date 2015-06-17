@@ -16,6 +16,7 @@ public class AddTaskFromProject {
     String projectName;
 
     @BeforeClass
+    public void beforeClass() {
         projectName = "atc Project Name";
         String color = "rgb(149, 239, 99)";
         HomePage homePage = new HomePage();
