@@ -9,12 +9,12 @@ import com.selenium.course.pages.*;
 public class Login {
     private HomePage homePage;
 
-    @BeforeMethod
+    @BeforeMethod(groups = "BVT")
     public void setUp() {
          homePage = new HomePage();
     }
 
-    @Test
+    @Test(groups = "BVT")
     public void testUntitled() {
         String email = Environment.getInstance().getPrimaryUser();
         String password = Environment.getInstance().getPrimaryPassword();

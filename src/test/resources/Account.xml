@@ -1,11 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" >
-    <test name="Regression1">
+<suite name="Account" verbose="1" >
+    <test name="Account">
         <classes>
             <class name="com.selenium.course.testng.TestNGSuite"/>
             <class name="com.selenium.course.testng.Login"/>
-            <!--<class name="com.selenium.course.testng.EditFullName"/>-->
-            <!--<class name="com.selenium.course.testng.QuickAddTask"/>-->
+            <class name="com.selenium.course.testng.EditFullName"/>
         </classes>
     </test>
 </suite>

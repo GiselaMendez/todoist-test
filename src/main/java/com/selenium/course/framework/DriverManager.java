@@ -21,8 +21,8 @@ public class DriverManager {
     private static DriverManager instance;
     private WebDriver driver;
     private WebDriverWait wait;
-    private String browser = "safari";
-    private String mode = "SauceLabs";
+    private String browser = Environment.getInstance().getBrowser();
+    private String mode = Environment.getInstance().getMode();
     private String username = "carledriss";
     private String key = "82f05dc5-b331-46b0-8781-06dd0483088e";
 

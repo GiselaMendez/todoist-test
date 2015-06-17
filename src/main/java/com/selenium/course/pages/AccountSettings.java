@@ -94,8 +94,11 @@ public class AccountSettings {
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameSettingsName));
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameSettingsId));
             saveFullNameLnk.click();
+            Thread.sleep(2000);
         } catch (WebDriverException e) {
             throw new WebDriverException(e);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         } finally {
             driver.switchTo().defaultContent();
         }

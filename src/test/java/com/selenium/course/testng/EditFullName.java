@@ -13,13 +13,13 @@ public class EditFullName {
     private TodoistSettings todoistSettings;
     String fullName;
 
-    @BeforeMethod
+    @BeforeMethod(groups = "Acceptance")
     public void setUp() {
         homePage = new HomePage();
         mainApp = homePage.loginAsPrimaryUser();
     }
 
-    @Test
+    @Test(groups = "Acceptance")
     public void testUntitled() {
         String newFullName = "sdasdsadasd";
 
@@ -37,7 +37,7 @@ public class EditFullName {
                 "Full Name should be edited");
     }
 
-    @AfterMethod
+    @AfterMethod(groups = "Acceptance")
     public void tearDown() {
         // Restore
         accountSettings.clickEditFullName();

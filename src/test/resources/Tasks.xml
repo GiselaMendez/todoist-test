@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tasks" verbose="1" >
+    <test name="Tasks">
+        <classes>
+            <class name="com.selenium.course.testng.TestNGSuite"/>
+            <class name="com.selenium.course.testng.QuickAddTask"/>
+            <class name="com.selenium.course.testng.AddTaskFromProject"/>
+        </classes>
+    </test>
+</suite>

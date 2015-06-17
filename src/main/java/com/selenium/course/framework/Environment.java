@@ -56,4 +56,12 @@ public class Environment {
         return getEnv("primaryUserPassword");
     }
 
+    public String getMode() {
+        return getEnv("mode");
+    }
+
+    public String getBrowser() {
+        return getEnv("browser");
+    }
+
 }
